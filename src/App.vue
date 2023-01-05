@@ -5,24 +5,39 @@
   
   (Au pire si c'est pas pareil on embellira plus tard)
   
-  Nom des classes : 
-  kebab-case
-  exemple
-  <div class="something-container">
+----------------------
+CLASSES
+----------------------
+kebab-case
+exemple
+<div class="something-container">
+  
+----------------------
+COMPONENTS
+----------------------
+NomMajuscule.vue
+BASE DU COMPONENT VUE JS :
+
+<template>
+  <div class="nomdutemplate-container">
+  </div>
+</template>
+<script>
+  export default {
+    name: "NomComponent.vue";
+  }
+</script>
   -->
 
 <script setup>
-import HomePage from "./components/HomePage.vue";
+import Navigation from "./components/Navigation.vue";
 </script>
 
 <template>
   <div>
-        <HomePage />
-    <Banniere />
+    <Navigation />
   </div>
 </template>
-
-
 
 <style scoped>
 .logo {

@@ -4,7 +4,7 @@ Partie front du projet NEOSETTLERS développée avec Vue3
 
 ## Pour récupérer et lancer le projet
 
-Effectuer un git bash here sur votre bureau
+Effectuer sur votre bureau : clic droit --> git bash here 
 
 ```
 git clone https://github.com/MoustaphaCamara/neo-front

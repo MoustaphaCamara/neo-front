@@ -1,17 +1,12 @@
 
-<script setup></script>
+<script setup>
+import Navigation from './components/Navigation.vue';
+</script>
+
 
 <template>
   <div>
-    <!-- nos liens de navigation  -->
-    <router-link to="/">
-      <p>Accueil</p>
-    </router-link>
-    <router-link to="/fred">
-      <p>Frédéric</p>
-    </router-link>
-    <!-- Afficher la navigation (router-view) -->
-    <router-view></router-view>
+<Navigation />
   </div>
 </template>
 

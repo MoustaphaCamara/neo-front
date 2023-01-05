@@ -54,8 +54,8 @@ git add .
 git commit -m "commentaire"
 git push -u origin main
 ```
-git add . \n
-git add README.md par exemple pour ajouter un seul fichier \n
+git add . <br />
+git add README.md par exemple pour ajouter un seul fichier <br />
 ou git add router pour ajouter tout le dossier router
 ## Récupérer les données du repo :
 

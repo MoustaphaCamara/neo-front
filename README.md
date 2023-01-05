@@ -1,4 +1,4 @@
-# Projet Neo-fronthbgygygib
+# Projet Neo-front
 
 Partie front du projet NEOSETTLERS développée avec Vue3
 
@@ -28,7 +28,8 @@ ouvrir avec vs code :
 code .
 ```
 
-lancer le projet dans le navigateur :
+Une fois dans VSCode, ouvrir le terminal (ctrl+ µ)
+Et pour lancer le projet dans le navigateur :
 
 ```
 npm run dev

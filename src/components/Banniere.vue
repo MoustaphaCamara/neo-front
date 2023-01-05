@@ -11,7 +11,7 @@
     };
 </script>
 
-<style>
+<style scoped>
     .banner-container {
 
     background-image: url(../assets/vadim-sadovski-2016-12-12-22-49-53.jpg);
@@ -20,6 +20,9 @@
     height: 400PX;
     padding: 50px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
 
     h1, p {
@@ -27,5 +30,6 @@
     text-align: center;
     color: white;
     text-shadow: 1px 1px 1px #000;
+    padding: 5px;
     }
 </style>

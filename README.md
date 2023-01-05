@@ -4,18 +4,19 @@ Partie front du projet NEOSETTLERS développée avec Vue3
 
 ## Pour récupérer et lancer le projet
 
-- Effectuer un git bash here sur votre bureau
+Effectuer un git bash here sur votre bureau
 
-- git clone https://github.com/MoustaphaCamara/neo-front
+```
+git clone https://github.com/MoustaphaCamara/neo-front
+```
 
-Sur le bureau on aura le dossier "neo-front",
-dans le terminal :
+Accéder au dossier cloné :
 
 ```
 cd neo-front
 ```
 
-et pour récupérer toutes les dépendances installées :
+Et pour récupérer toutes les dépendances installées :
 
 ```
 npm install

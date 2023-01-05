@@ -19,9 +19,12 @@
 
 <template>
   <div>
-<HomePage />
+    <HomePage />
+    <Banniere />
   </div>
 </template>
+
+
 
 <style scoped>
 .logo {

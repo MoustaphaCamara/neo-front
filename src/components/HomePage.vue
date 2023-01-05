@@ -1,9 +1,15 @@
 <template>
-  <div><h1>Home</h1></div>
+  <div>
+    <Navigation />
+    <h1>Home</h1>
+   
+  </div>
 </template>
 
 <script>
-export default {};
+import Navigation from "./Navigation.vue";
+
+export default { components: { Navigation } };
 </script>
 
 <style></style>

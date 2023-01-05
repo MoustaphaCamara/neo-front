@@ -1,27 +1,39 @@
 <template>
 
-    
-    <div class="navigation">
+  <div class="navigation">
     <!-- nos liens de navigation  -->
+    <img src="" alt="Logo"/>
 
-    <router-link to="/">
-        <img src="" alt="Logo">
-      <p>Accueil</p>
-    </router-link>
-    <router-link to="/fred">
-      <p>Frédéric</p>
-    </router-link>
-    <!-- Afficher la navigation (router-view) -->
-    <router-view></router-view>
+    <div class="links">
 
+      <router-link to="/">
+        <p>Accueil</p>
+      </router-link>
+
+      <router-link to="/">
+        <p>Connexion</p>
+      </router-link>
+
+      <router-link to="/">
+        <p>Inscription</p>
+      </router-link>
 
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "Nav",
-  };
-  </script>
-  
-  <style></style>
+    <!-- Afficher la navigation (router-view) -->
+  </div>
+
+</template>
+
+<script>
+export default {
+  name: "Navigation",
+};
+</script>
+
+<style>
+.navigation {
+  width: 100%;
+  display: flex;
+
+}
+</style>

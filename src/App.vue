@@ -10,16 +10,16 @@
   exemple
   <div class="something-container">
 
-<script setup>
-import Navigation from './components/Navigation.vue';
-</script>
+    
+  -->
 
- -->
-<script setup></script>
+<script setup>
+  import HomePage from './components/HomePage.vue';
+</script>
 
 <template>
   <div>
-<Navigation />
+<HomePage />
   </div>
 </template>
 

@@ -1,7 +1,38 @@
-# Vue 3 + Vite
+# Projet Neo-front
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Partie front du projet NEOSETTLERS développée avec Vue3
 
-## Recommended IDE Setup
+## Pour récupérer et lancer le projet
+
+- Effectuer un git bash here sur votre bureau
+
+- git clone https://github.com/MoustaphaCamara/neo-front
+
+Sur le bureau on aura le dossier "neo-front",
+dans le terminal :
+
+```
+cd neo-fron
+```
+
+et pour récupérer toutes les dépendances installées :
+
+```
+npm install
+```
+
+ouvrir avec vs code :
+
+```
+code .
+```
+
+lancer le projet dans le navigateur :
+
+```
+npm run dev
+```
+
+ça va ouvrir le fichier sur un localhost, copier-coller dans le navigateur ou control+clic
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).

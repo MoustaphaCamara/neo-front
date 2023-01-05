@@ -31,9 +31,15 @@ export default {
 </script>
 
 <style>
+
 .navigation {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 
+}
+
+.links {
+  
 }
 </style>

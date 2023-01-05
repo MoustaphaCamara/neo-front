@@ -1,8 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home-container">
     <Navigation />
     <h1>Home</h1>
-   
   </div>
 </template>
 
@@ -12,13 +11,4 @@ import Navigation from "./Navigation.vue";
 export default { components: { Navigation } };
 </script>
 
-<style>
-
-.home {
-  width: 100%;
-  background: black;
-
-}
-
-
-</style>
+<style></style>

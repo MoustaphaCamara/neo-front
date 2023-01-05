@@ -35,3 +35,12 @@ npm run dev
 ```
 
 Le terminal va afficher le localhost sur lequel le site est lancé, copier-coller dans le navigateur ou control+clic
+
+```
+  VITE v4.0.4  ready in 1091 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+
+```

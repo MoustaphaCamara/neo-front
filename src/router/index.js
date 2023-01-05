@@ -3,11 +3,19 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../pages/HomePage.vue";
 import ConnexionPage from "../pages/ConnexionPage.vue";
 import RegistrationPage from "../pages/RegistrationPage.vue";
+import CandidateHome from "../pages/CandidateHome.vue";
+import CandidateProfile from "../pages/CandidateProfile.vue";
+import AgencyHome from "../pages/AgencyHome.vue";
+import AgencyProfile from "../pages/AgencyProfile.vue";
 
 const routes = [
   { path: "/", component: HomePage },
   { path: "/connexion", component: ConnexionPage },
   { path: "/registration", component: RegistrationPage },
+  { path: "/candidate/home", component: CandidateHome },
+  { path: "/candidate/profile", component: CandidateProfile },
+  { path: "/agency/home", component: AgencyHome },
+  { path: "/agency/profile", component: AgencyProfile },
 
   // chemin dynamique pour les offres en fonction de leur id
   //   { path: "/offer/:id", component: JobOffer, props: true },

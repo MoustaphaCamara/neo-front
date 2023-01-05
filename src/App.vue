@@ -9,17 +9,15 @@
   kebab-case
   exemple
   <div class="something-container">
-
-    
   -->
 
 <script setup>
-  import HomePage from './components/HomePage.vue';
+import HomePage from "./components/HomePage.vue";
 </script>
 
 <template>
   <div>
-    <HomePage />
+        <HomePage />
     <Banniere />
   </div>
 </template>

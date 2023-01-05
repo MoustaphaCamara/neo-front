@@ -1,18 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TestPage from './components/TestPage.vue'
 
-function achter(val) {
-  
-  return val
-}
-</script>
+<script setup></script>
 
 <template>
-
-  <HelloWorld msg="huyguytgutg + Vue" />
-  <TestPage/>
-  {{ achter("Coucou fred") }}
+  <div>
+    <!-- nos liens de navigation  -->
+    <router-link to="/">
+      <p>Accueil</p>
+    </router-link>
+    <router-link to="/fred">
+      <p>Frédéric</p>
+    </router-link>
+    <!-- Afficher la navigation (router-view) -->
+    <router-view></router-view>
+  </div>
 </template>
 
 

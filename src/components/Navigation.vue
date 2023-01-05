@@ -15,19 +15,27 @@
       <!-- candidat et agency seront cachés une fois le développement des fonctionnalités fait, là c'est pour naviguer tranquillement.. :) -->
       <!-- candidat -->
       <router-link to="/candidate/home" class="link">
-        <p>accueil candidat</p>
+        <p>CANDIDAT - accueil</p>
       </router-link>
       <router-link to="/candidate/profile" class="link">
-        <p>profile candidat</p>
+        <p>CANDIDAT - profil</p>
       </router-link>
       <!-- agence -->
       <router-link to="/agency/home" class="link">
-        <p>accueil Agence</p>
+        <p>AGENCE - accueil</p>
       </router-link>
       <router-link to="/agency/profile" class="link">
-        <p>profile Agence</p>
+        <p>AGENCE - profil</p>
+      </router-link>
+      <!-- offres d'emplois -->
+      <router-link to="/candidate/apply" class="link">
+        <p>Postuler (candidat)</p>
+      </router-link>
+      <router-link to="/agency/create" class="link">
+        <p>Créer offre (agence)</p>
       </router-link>
     </div>
+
     <!-- Afficher la navigation (router-view) -->
     <router-view></router-view>
   </div>

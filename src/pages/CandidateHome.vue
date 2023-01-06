@@ -9,6 +9,10 @@
       <Offer />
       <Offer />
       <Offer />
+      <Offer />
+      <Offer />
+      <Offer />
+      <Offer />
     </div>
   </div>
 </template>

@@ -89,9 +89,10 @@ input[type="email"] {
   border: 1px solid #8a7961;
   text-align: center;
 }
-#name:focus,
-#email:focus,
-#password:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
   border: 4px solid black;
 }
 input {

@@ -35,9 +35,6 @@
         <p>Créer offre (agence)</p>
       </router-link>
     </div>
-
-    <!-- Afficher la navigation (router-view) -->
-    <router-view></router-view>
   </div>
 </template>
 

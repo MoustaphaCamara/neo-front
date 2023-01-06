@@ -1,10 +1,10 @@
 <template>
-  <h1>Connexion</h1>
+  <h1>Connexion Agence</h1>
 </template>
 
 <script>
 export default {
-  name: "ConnexionPage",
+  name: "AgencyConnexion",
 };
 </script>
 

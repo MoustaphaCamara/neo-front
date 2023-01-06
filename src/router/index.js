@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 // ici on aura besoin d'importer que les "pages" et non les components, pour que nos urls (exemple neoset.com/connexion) soient créés
 import HomePage from "../pages/HomePage.vue";
-import ConnexionPage from "../pages/ConnexionPage.vue";
+import CandidateConnexion from "../pages/CandidateConnexion.vue";
+import AgencyConnexion from "../pages/AgencyConnexion.vue";
 import RegistrationPage from "../pages/RegistrationPage.vue";
 import CandidateHome from "../pages/CandidateHome.vue";
 import CandidateProfile from "../pages/CandidateProfile.vue";
@@ -12,11 +13,15 @@ import ApplyOffer from "../pages/ApplyOffer.vue";
 
 const routes = [
   { path: "/", component: HomePage },
-  { path: "/connexion", component: ConnexionPage },
+  // inscription (choix candidat ou agence sur même page)
   { path: "/registration", component: RegistrationPage },
+  // candidat
+  { path: "/candidate/connexion", component: CandidateConnexion },
   { path: "/candidate/home", component: CandidateHome },
   { path: "/candidate/profile", component: CandidateProfile },
   { path: "/candidate/apply", component: ApplyOffer },
+  // agence
+  { path: "/agency/connexion", component: AgencyConnexion },
   { path: "/agency/home", component: AgencyHome },
   { path: "/agency/profile", component: AgencyProfile },
   { path: "/agency/create", component: CreateOffer },

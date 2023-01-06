@@ -29,7 +29,8 @@ export default {
 </script>
 
 <style>
-.connexion-container {
+.connexion-container,
+.registration-container {
   /* background: black; */
   background: url("../assets/planet.jpg");
   background-size: cover;
@@ -48,7 +49,8 @@ h1 {
   color: var(--text-sable);
   text-shadow: 2px 0 black;
 }
-.connexion {
+.connexion,
+.inscription {
   width: 40%;
   margin: 0 auto;
   text-align: center;
@@ -57,7 +59,8 @@ h1 {
   box-shadow: 0 0 8px var(--bg-sable);
   background-color: #bea684da;
   gap: 16px;
-  margin: 24px 0;
+  margin-top: 24px;
+  /* margin: 24px 0; */
   padding: 16px;
   border-radius: 8px;
   display: flex;
@@ -70,9 +73,10 @@ h1 {
   flex-direction: column;
   gap: 4px;
 }
-#name,
-#email,
-#password {
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
   background: var(--bg-sable);
   padding: 8px;
   border-radius: 8px;

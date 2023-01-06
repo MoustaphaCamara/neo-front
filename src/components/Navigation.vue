@@ -83,14 +83,14 @@ export default {
   margin: 5px 10px;
   padding: 5px;
   color: #bea684;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .link p:hover {
   text-decoration: underline;
   color: var( --text-white);
   border-radius: 0 10px 0 10px;
- 
+  transform: scale(1.1);
 }
 
 .link {

@@ -14,6 +14,7 @@
         <li class="info">Other projects</li>
         <li class="info">Contact</li>
       </ul>
+      <div class="separator"></div>
       <ul class="term-container">
         <li class="term">Privacy Policy</li>
         <li class="term">Capitalism Statement</li>
@@ -21,6 +22,7 @@
         <li class="term">Privacy Policy</li>
         <li class="term">Privacy Policy</li>
       </ul>
+      <div class="separator"></div>
       <div class="social-container">
         <ul class="icons-container">
           <li><i class="icon fa-brands fa-facebook"></i></li>
@@ -29,6 +31,7 @@
           <li><i class="icon fa-brands fa-twitter"></i></li>
         </ul>
       </div>
+      <div class="separator"></div>
       <img
         src="https://www.elitedangerous.com/_nuxt/img/pegi-16-descriptors-elite-dangerous-odyssey.c10bd5c.svg"
         alt="pegi"
@@ -104,11 +107,5 @@ export default {
 .pegi {
   width: 100px;
   margin-left: 24px;
-}
-.info-container,
-.term-container,
-.social-container,
-.social-container {
-  border-right: 1px solid white;
 }
 </style>

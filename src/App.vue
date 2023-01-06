@@ -6,9 +6,7 @@ import Navigation from "./components/Navigation.vue";
 <template>
   <div>
     <Navigation />
-    <!-- Afficher la navigation (router-view) -->
     <router-view></router-view>
-    <Footer />
   </div>
 </template>
 

@@ -1,13 +1,21 @@
 <template>
   <div class="nav-container">
-    <div class="links">
+    <div>
       <router-link to="/" class="link logo">
         <img src="https://i.ibb.co/JrhTCp2/logo-neosettlers.png" alt="logo" />
       </router-link>
+    </div>
 
-      <router-link to="/connexion" class="link">
-        <p>Connexion</p>
-      </router-link>
+    <div class="links">
+      <div class="type-connexion">
+        <router-link to="/agency/connexion" class="link">
+          <p>Connexion agence</p>
+        </router-link>
+
+        <router-link to="/candidate/connexion" class="link">
+          <p>Connexion candidat</p>
+        </router-link>
+      </div>
 
       <router-link to="/registration" class="link">
         <p>Inscription</p>
@@ -35,6 +43,9 @@
         <p>Créer offre (agence)</p>
       </router-link>
     </div>
+
+    <!-- Afficher la navigation (router-view) -->
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -45,8 +56,36 @@ export default {
 </script>
 
 <style scoped>
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: gray;
+}
+
+.type-connexion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.links p {
+  margin: 10px;
+}
+
 .logo img {
-  width: 150px;
+  width: 100px;
 }
 .link {
   text-decoration: none;

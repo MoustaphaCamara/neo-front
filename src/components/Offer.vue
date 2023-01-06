@@ -45,9 +45,11 @@ export default {
 }
 
 .offer h1 {
-  color: var(--text-hover-orange);
+  color: var(--title-blue);
   font-size: 30px;
   font-weight: 100;
+  text-shadow: 1px 1px 2px var(--bg-gray);
+  
 }
 
 .offer p {
@@ -79,10 +81,4 @@ export default {
 p span {
   color: red;
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 1cb8a1ea33ed17622eaaa3b227f23f0794e2c263
 </style>

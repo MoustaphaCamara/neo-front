@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .connexion-container,
 .registration-container, .create-offer-container {
   /* background: black; */
@@ -36,16 +36,7 @@ export default {
   background-size: cover;
 }
 h1 {
-  /* color: var(--title-blue); */
-  /* text-align: center;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--bg-sable) 25%,
-    var(--bg-sable) 75%,
-    transparent
-  );
-  padding: 16px; */
+
   color: var(--text-sable);
   text-shadow: 2px 0 black;
 }

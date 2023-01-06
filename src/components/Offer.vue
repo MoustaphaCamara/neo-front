@@ -1,6 +1,6 @@
 <template>
   <div class="offer">
-    
+
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
 
@@ -38,6 +38,7 @@ export default {
 .offer h1 {
   color: var(--text-hover-orange);
   font-size: 30px;
+  font-weight: 100;
 }
 
 .offer p {

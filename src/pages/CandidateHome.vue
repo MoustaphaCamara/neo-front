@@ -1,15 +1,10 @@
 <template>
-  <h1>Bienvenue jeune padawan _nom candidat_ !</h1>
   <div class="container">
     <div class="left-part">
       <Profile />
     </div>
     <div class="right-part">
       <h1>Voici les offres disponibles actuellement</h1>
-      <Offer />
-      <Offer />
-      <Offer />
-      <Offer />
       <Offer />
       <Offer />
       <Offer />
@@ -27,6 +22,7 @@ export default {
 
 <style>
 .container {
+  background-color: var(--bg-gray);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -34,22 +30,32 @@ export default {
 
 .left-part {
   width: 25%;
-  background-color: var(--bg-black);
+  border-right: 2px solid black;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.301),
+    transparent 100px
+  );
 }
 
 .right-part {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   width: 75%;
-  background-color: var(--bg-gray);
+  background: linear-gradient(to right, var(--bg-gray), black);
+
+  /* background: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.301),
+    transparent 200px
+  ); */
   gap: 5px;
 }
-
 .right-part h1 {
   width: 100%;
   border-bottom: 1px solid white;
-  background-color: var(--bg-sable);
+  /* background-color: var(--bg-sable); */
   color: var(--text-hover-orange);
   padding: 5px 10px;
   font-weight: 100;

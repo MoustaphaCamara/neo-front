@@ -1,15 +1,15 @@
 <template>
   <div class="offer">
-
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
 
     <div class="contrat-salaire">
       <p>Type de contrat : {{ contrat_type }}</p>
-      <button >Postuler</button>
-      <p>Salaire annuel : <span>{{ salary }}</span></p>
+      <button>Postuler</button>
+      <p>
+        Salaire annuel : <span>{{ salary }}</span>
+      </p>
     </div>
-    
   </div>
 </template>
 
@@ -40,7 +40,6 @@ export default {
   color: var(--text-hover-orange);
   font-size: 30px;
   font-weight: 100;
- 
 }
 
 .offer p {
@@ -58,7 +57,7 @@ export default {
 .contrat-salaire button {
   width: 100px;
   border-radius: 50px;
-  background-color: var( --bg-gray);
+  background-color: var(--bg-gray);
   border: 1px solid var(--text-hover-orange);
   color: var(--text-white);
   border-radius: 0 20px 0 20px;
@@ -70,7 +69,6 @@ export default {
 }
 
 p span {
-  color:red;
+  color: red;
 }
-
 </style>

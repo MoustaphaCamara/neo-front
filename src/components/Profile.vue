@@ -44,7 +44,7 @@ export default {
   /* background: var(--bg-sable); */
   background: darkviolet;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .profile {
   height: 50vh;

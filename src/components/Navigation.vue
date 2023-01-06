@@ -62,7 +62,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: gray;
+  background: var(--bg-black);
+ 
 }
 
 .type-connexion {
@@ -76,23 +77,46 @@ export default {
   align-items: center;
 }
 
-.link:hover {
-  text-decoration: underline;
-}
+
 
 .links p {
-  margin: 10px;
+  margin: 5px 10px;
+  padding: 5px;
+  color: #bea684;
+  transition: 0.2s;
 }
+
+.link p:hover {
+  text-decoration: underline;
+  color: var( --text-white);
+  border-radius: 0 10px 0 10px;
+ 
+}
+
+.link {
+  text-decoration: none;
+}
+
 
 .logo img {
   width: 100px;
 }
-.link {
-  text-decoration: none;
-}
+
+
+
 /* quand on est sur une page : router-link-active */
 .router-link-active {
-  font-size: 1.5rem;
-  font-weight: bolder;
+  /* font-size: 1.5rem;
+  font-weight: bolder; */
+  background-color: var( --bg-sable);
+  border-radius: 0 5px 0 5px;
+  transition: 0.2s;
+  
 }
+
+.router-link-active p{
+  color: var(--text-white);
+ 
+}
+
 </style>

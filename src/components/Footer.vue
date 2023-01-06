@@ -57,7 +57,7 @@ export default {
   align-items: center;
 }
 .footer-container {
-  width: 100vw;
+  width: 100%;
   height: auto;
   /* max-height: 25vh; */
   background: black;

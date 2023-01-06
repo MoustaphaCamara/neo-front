@@ -40,6 +40,7 @@ export default {
   color: var(--text-hover-orange);
   font-size: 30px;
   font-weight: 100;
+ 
 }
 
 .offer p {
@@ -60,6 +61,7 @@ export default {
   background-color: var( --bg-gray);
   border: 1px solid var(--text-hover-orange);
   color: var(--text-white);
+  border-radius: 0 20px 0 20px;
   transition: 0.3s;
 }
 

@@ -40,9 +40,8 @@ export default {
 .right-part {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:center;
   width: 75%;
-  padding: 10px;
   background-color: var(--bg-gray);
   gap: 5px;
 }
@@ -53,5 +52,6 @@ export default {
   background-color: var(--bg-sable);
   color: var(--text-hover-orange);
   padding: 5px 10px;
+  font-weight: 100;
 }
 </style>

@@ -1,24 +1,14 @@
 <template>
+  <h1>Bienvenue jeune padawan _nom candidat_ !</h1>
   <div class="container">
-    <div class="candidate-home">
-      <h1>Bienvenue jeune padawan _nom candidat_ !</h1>
+    <div class="left-part">
       <Profile />
     </div>
-
-    <div class="candidate-offers">
+    <div class="right-part">
       <h1>Voici les offres disponibles actuellement</h1>
-
-      <div class="offer">
-        <Offer />
-      </div>
-
-      <div class="offer">
-        <Offer />
-      </div>
-
-      <div class="offer">
-        <Offer />
-      </div>
+      <Offer />
+      <Offer />
+      <Offer />
     </div>
   </div>
 </template>
@@ -38,12 +28,12 @@ export default {
   width: 100%;
 }
 
-.candidate-home {
+.left-part {
   width: 25%;
   background-color: var(--bg-black);
 }
 
-.candidate-offers {
+.right-part {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -53,26 +43,11 @@ export default {
   gap: 5px;
 }
 
-.candidate-offers h1 {
+.right-part h1 {
   width: 100%;
   border-bottom: 1px solid white;
   background-color: var(--bg-sable);
   color: var(--text-hover-orange);
   padding: 5px 10px;
-}
-
-.offer {
-  background-color: var(--bg-sable);
-  width: 48%;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.offer h1 {
-  color: var(--text-white);
-}
-
-.offer p {
-  margin: 5px;
 }
 </style>

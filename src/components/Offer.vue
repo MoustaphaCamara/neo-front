@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="offer">
     <h1>Offre : {{ title }}</h1>
     <p>{{ content }}</p>
     <p>Type de contrat : {{ contrat_type }}</p>
@@ -22,4 +22,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.offer {
+  background-color: var(--bg-sable);
+  width: 48%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.offer h1 {
+  color: var(--text-white);
+}
+
+.offer p {
+  margin: 5px;
+}
+</style>

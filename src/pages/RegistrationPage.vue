@@ -37,9 +37,8 @@
 
         <label for="psw2">Confirmation du mot passe :</label>
         <input id="psw2" type="password" name="password2" />
-
-        <input type="submit" value="Confirmer" />
       </form>
+      <input type="submit" value="Confirmer" />
     </div>
   </div>
   <!-- on peut essayer de ne faire qu'une page inscription pour les 2 (candidat & agence)

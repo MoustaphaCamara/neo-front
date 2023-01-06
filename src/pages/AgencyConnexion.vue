@@ -56,6 +56,8 @@ h1 {
   text-align: center;
 }
 .form {
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 0 8px var(--bg-sable);
   background-color: #bea684da;
   gap: 16px;
@@ -65,6 +67,7 @@ h1 {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .name,
 .password,
@@ -104,11 +107,11 @@ input[type="submit"] {
   text-transform: uppercase;
   font-weight: bolder;
   transition: 0.3s ease;
+  margin-top: 8px;
 }
 input[type="submit"]:hover {
   background: rgba(0, 0, 0, 0.788);
   color: var(--text-sable);
-
   transform: scale(1.1);
   cursor: pointer;
 }

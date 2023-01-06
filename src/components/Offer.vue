@@ -41,7 +41,6 @@ export default {
 .offer:hover {
   cursor: pointer;
   scale: 1.02;
- 
 }
 
 .offer h1 {
@@ -79,10 +78,4 @@ export default {
 p span {
   color: red;
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 1cb8a1ea33ed17622eaaa3b227f23f0794e2c263
 </style>

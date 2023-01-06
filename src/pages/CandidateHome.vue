@@ -2,7 +2,10 @@
 
   <div class="container">
 
+    
+
     <div class="candidate-home">
+
       <h1>Bienvenue jeune padawan _nom candidat_ !</h1>
       <Profile />
 
@@ -10,12 +13,19 @@
 
     <div class="candidate-offers">
 
-      <p>Voici les offres disponibles actuellement --></p>
+      <h1>Voici les offres disponibles actuellement</h1>
 
       <div class="offer">
         <Offer />
       </div>
-      
+
+      <div class="offer">
+        <Offer />
+      </div>
+
+      <div class="offer">
+        <Offer />
+      </div>
       
     </div>
 
@@ -48,16 +58,35 @@ export default {
 .candidate-offers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 75%;
+  padding: 10px;
   background-color: var(--bg-gray);
+  gap: 5px;
+}
+
+.candidate-offers h1 {
+
+  width: 100%;
+  border-bottom: 1px solid white;
+  background-color: var(--bg-sable);
+  color: var(--text-hover-orange);
+  padding: 5px 10px;
 }
 
 .offer {
-
-  width: 250px;
+  background-color: var(--bg-sable);
+  width: 48%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
+.offer h1 {
+  color: var(--text-white);
+}
 
-
+.offer p {
+  margin: 5px;
+}
 
 </style>

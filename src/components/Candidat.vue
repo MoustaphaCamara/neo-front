@@ -42,7 +42,15 @@
     width: 49%;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid var(--bg-gray);
+    transition: 0.2s;
   }
+
+  .candidat:hover {
+  cursor: pointer;
+  scale: 1.02;
+ 
+}
   
   .candidat h1 {
     color: var(--text-hover-orange);

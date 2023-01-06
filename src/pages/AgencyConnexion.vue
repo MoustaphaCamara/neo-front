@@ -30,7 +30,7 @@ export default {
 
 <style>
 .connexion-container,
-.registration-container {
+.registration-container, .create-offer-container {
   /* background: black; */
   background: url("../assets/planet.jpg");
   background-size: cover;
@@ -50,7 +50,7 @@ h1 {
   text-shadow: 2px 0 black;
 }
 .connexion,
-.inscription {
+.inscription, .create-offer{
   width: 40%;
   margin: 0 auto;
   text-align: center;
@@ -71,7 +71,7 @@ h1 {
 }
 .name,
 .password,
-.email {
+.email, .offer-title,.offer-content, .planet-name,.salary, .agency-id  {
   display: flex;
   flex-direction: column;
   gap: 4px;

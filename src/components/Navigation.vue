@@ -23,17 +23,17 @@
       <!-- candidat et agency seront cachés une fois le développement des fonctionnalités fait, là c'est pour naviguer tranquillement.. :) -->
       <!-- candidat -->
       <router-link to="/candidate/home" class="link">
-        <p>CANDIDAT - accueil</p>
+        <p>Offres disponibles (candidat)</p>
       </router-link>
       <router-link to="/candidate/profile" class="link">
-        <p>CANDIDAT - profil</p>
+        <p>Favoris - Candidatures</p>
       </router-link>
       <!-- agence -->
       <router-link to="/agency/home" class="link">
-        <p>AGENCE - accueil</p>
+        <p>Candidats à recruter</p>
       </router-link>
       <router-link to="/agency/profile" class="link">
-        <p>AGENCE - profil</p>
+        <p>Nos offres</p>
       </router-link>
       <!-- offres d'emplois -->
       <router-link to="/candidate/apply" class="link">
@@ -41,6 +41,10 @@
       </router-link>
       <router-link to="/agency/create" class="link">
         <p>Créer offre (agence)</p>
+      </router-link>
+      <!-- deconnexion -->
+      <router-link to="/" class="link">
+        <p>Déconnexion</p>
       </router-link>
     </div>
 
@@ -63,7 +67,6 @@ export default {
   align-items: center;
   padding: 10px;
   background: var(--bg-black);
- 
 }
 
 .type-connexion {
@@ -77,8 +80,6 @@ export default {
   align-items: center;
 }
 
-
-
 .links p {
   margin: 5px 10px;
   padding: 5px;
@@ -88,7 +89,7 @@ export default {
 
 .link p:hover {
   text-decoration: underline;
-  color: var( --text-white);
+  color: var(--text-white);
   border-radius: 0 10px 0 10px;
   transform: scale(1.1);
 }
@@ -97,26 +98,20 @@ export default {
   text-decoration: none;
 }
 
-
 .logo img {
   width: 100px;
 }
-
-
 
 /* quand on est sur une page : router-link-active */
 .router-link-active {
   /* font-size: 1.5rem;
   font-weight: bolder; */
-  background-color: var( --bg-sable);
+  background-color: var(--bg-sable);
   border-radius: 0 5px 0 5px;
   transition: 0.2s;
-  
 }
 
-.router-link-active p{
+.router-link-active p {
   color: var(--text-white);
- 
 }
-
 </style>

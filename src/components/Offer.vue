@@ -1,9 +1,14 @@
 <template>
   <div class="offer">
+    
     <h1>{{ title }}</h1>
     <p>{{ content }}</p>
-    <p>Type de contrat : {{ contrat_type }}</p>
-    <p>Salaire annuel : {{ salary }}</p>
+
+    <div class="contrat-salaire">
+      <p>Type de contrat : {{ contrat_type }}</p>
+      <p>Salaire annuel : <span>{{ salary }}</span></p>
+    </div>
+    
   </div>
 </template>
 
@@ -38,4 +43,16 @@ export default {
 .offer p {
   margin: 5px;
 }
+
+.contrat-salaire {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--bg-gray);
+}
+
+p span {
+  color:red;
+}
+
 </style>

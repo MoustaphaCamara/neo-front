@@ -3,7 +3,7 @@
     <h1>Offre : {{ title }}</h1>
     <p>{{ content }}</p>
     <p>Type de contrat : {{ contrat_type }}</p>
-    <p>Salaire annuel :{{ salary }}</p>
+    <p>Salaire annuel : {{ salary }}</p>
   </div>
 </template>
 

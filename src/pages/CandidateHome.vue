@@ -1,18 +1,11 @@
 <template>
-
   <div class="container">
-
-    
-
     <div class="candidate-home">
-
       <h1>Bienvenue jeune padawan _nom candidat_ !</h1>
       <Profile />
-
     </div>
 
     <div class="candidate-offers">
-
       <h1>Voici les offres disponibles actuellement</h1>
 
       <div class="offer">
@@ -26,15 +19,11 @@
       <div class="offer">
         <Offer />
       </div>
-      
     </div>
-
   </div>
-
 </template>
 
 <script>
-
 import Offer from "../components/Offer.vue";
 import Profile from "../components/Profile.vue";
 export default {
@@ -43,7 +32,6 @@ export default {
 </script>
 
 <style>
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +54,6 @@ export default {
 }
 
 .candidate-offers h1 {
-
   width: 100%;
   border-bottom: 1px solid white;
   background-color: var(--bg-sable);
@@ -88,5 +75,4 @@ export default {
 .offer p {
   margin: 5px;
 }
-
 </style>

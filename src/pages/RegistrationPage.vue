@@ -26,8 +26,7 @@
           id="phone"
           type="tel"
           pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-          name="phone"
-        />
+          name="phone" required/>
 
         <label for="website">Site Web</label>
         <input id="website" type="text" name="website" />

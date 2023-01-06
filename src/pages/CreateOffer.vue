@@ -2,6 +2,7 @@
   <div class="create-offer">
     <!-- page pour Agence -->
     <h2>Ici, tu peux créer tes offres d'emplois de colonialiste</h2>
+    <!-- formulaire de création -->
   </div>
 </template>
 

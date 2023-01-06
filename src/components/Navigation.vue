@@ -90,7 +90,7 @@ export default {
 .link p:hover {
   text-decoration: underline;
   color: var(--text-white);
-  border-radius: 0 10px 0 10px;
+  border-radius: 0 20px 0 20px;
   transform: scale(1.1);
 }
 
@@ -107,7 +107,7 @@ export default {
   /* font-size: 1.5rem;
   font-weight: bolder; */
   background-color: var(--bg-sable);
-  border-radius: 0 5px 0 5px;
+  border-radius: 0 15px 0 15px;
   transition: 0.2s;
 }
 

@@ -34,6 +34,14 @@ export default {
   width: 48%;
   padding: 10px;
   border-radius: 10px;
+  transition: 0.2s;
+  border: 1px solid var(--bg-gray);
+}
+
+.offer:hover {
+  cursor: pointer;
+  scale: 1.02;
+ 
 }
 
 .offer h1 {
@@ -71,4 +79,10 @@ export default {
 p span {
   color: red;
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 1cb8a1ea33ed17622eaaa3b227f23f0794e2c263
 </style>

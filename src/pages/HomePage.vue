@@ -6,7 +6,6 @@
 </template>
 
 <script>
-Banniere;
 import Banniere from "../components/Banniere.vue";
 export default { components: { Banniere } };
 </script>

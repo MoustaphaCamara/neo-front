@@ -56,8 +56,9 @@ export default {
   width: 100%;
   border-bottom: 1px solid white;
   /* background-color: var(--bg-sable); */
-  color: var(--text-hover-orange);
+  /* color: var(--text-hover-orange); */
   padding: 5px 10px;
   font-weight: 100;
+  color: var( --text-hover-orange);
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
+    <h1>Offre : {{ title }}</h1>
+    <p>{{ content }}</p>
+    <p>{{ contrat_type }}</p>
+    <p>{{ salary }}</p>
   </div>
 </template>
 
@@ -9,9 +12,13 @@ export default {
   name: "Offer",
   data() {
     return {
-      title: "Job offer 1",
+      title: "Développeur•se JS/React",
       content:
-        "    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sunt soluta tempore assumenda dolor dolorum, laboriosam consectetur exercitationem temporibus sequi?",
+        "Présentation de l'entreprise.Semji est un éditeur qui commercialise une 👉plateforme SaaS👈 de création de contenus digitaux, propulsée par de lIA 🚀, accompagnée de services professionnels SEO.",
+      contrat_type: "CDI",
+      salary: "37k",
+
+        
     };
   },
 };

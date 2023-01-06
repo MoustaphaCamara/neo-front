@@ -6,6 +6,7 @@
 
     <div class="contrat-salaire">
       <p>Type de contrat : {{ contrat_type }}</p>
+      <button >Postuler</button>
       <p>Salaire annuel : <span>{{ salary }}</span></p>
     </div>
     
@@ -50,6 +51,20 @@ export default {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--bg-gray);
+  padding: 5px 0;
+}
+
+.contrat-salaire button {
+  width: 100px;
+  border-radius: 50px;
+  background-color: var( --bg-gray);
+  border: 1px solid var(--text-hover-orange);
+  color: var(--text-white);
+  transition: 0.3s;
+}
+
+.contrat-salaire button:hover {
+  scale: 1.1;
 }
 
 p span {

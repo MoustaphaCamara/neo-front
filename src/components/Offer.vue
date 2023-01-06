@@ -27,7 +27,7 @@ export default {
 
 .offer {
   background-color: var(--bg-sable);
-  width: 100%;
+  width: 49%;
   padding: 10px;
   border-radius: 10px;
 }

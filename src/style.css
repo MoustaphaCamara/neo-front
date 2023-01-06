@@ -9,12 +9,24 @@
   --bg-black: black;
   --bg-gray: #2c2c2c;
   --bg-sable: #bea684;
+
+  --font-title: "Rowdies";
+  --font-text: "Roboto Condensed";
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  font-family: var(--font-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
 }
 body {
   margin: 0;

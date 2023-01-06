@@ -16,8 +16,8 @@
       </ul>
       <ul class="term-container">
         <li class="term">Privacy Policy</li>
-        <li class="term">Privacy Policy</li>
-        <li class="term">Privacy Policy</li>
+        <li class="term">Capitalism Statement</li>
+        <li class="term">Personal Informations</li>
         <li class="term">Privacy Policy</li>
         <li class="term">Privacy Policy</li>
       </ul>

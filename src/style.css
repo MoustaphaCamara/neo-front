@@ -1,4 +1,14 @@
 :root {
+  --title-blue: #7aa2c8;
+
+  --text-sable: #bea684;
+  --text-white: #fdfdfd;
+  --text-hover-orange: #f76605;
+  --text-hover-blue: #7aa2c8;
+
+  --bg-black: black;
+  --bg-gray: #2c2c2c;
+  --bg-sable: #bea684;
 }
 * {
   margin: 0;

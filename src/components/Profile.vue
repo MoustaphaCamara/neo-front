@@ -2,8 +2,12 @@
   <div v-if="randomUser != null" class="profile">
     <!-- <p><pre>{{ randomUser }}</pre></p> -->
     <h2>Statut : {{ title }}</h2>
-    <div class="avatar-user">
-      <img :src="randomUser.data.results[0].picture.large" alt="profile-pic" />
+    <div class="avatar-container">
+      <img
+        class="user-avatar"
+        :src="randomUser.data.results[0].picture.large"
+        alt="profile-pic"
+      />
       <p>
         <em> Photo de {{ randomUser.data.results[0].name.first }}</em>
       </p>
@@ -38,6 +42,10 @@ export default {
 </script>
 
 <style>
+.user-avatar {
+  border-radius: 50%;
+  box-shadow: 0 0 0px 5px var(--blue), 0 0 15px 10px var(--sable);
+}
 .apply {
   text-transform: uppercase;
   background: var(--blue);

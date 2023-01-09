@@ -2,9 +2,13 @@
   <div class="registration-container">
     <div class="registration">
       <div class="inscription-logo">
-        <i class="registration-logo fa-regular fa-user"></i>
-        <!-- <img src="/" alt="logo"> -->
-        <!-- <img v-if="src" src="/" alt="logo"> -->
+        <!-- <i class="registration-logo fa-regular fa-user"></i> -->
+        <img
+          class="user-avatar"
+          v-if="randomUser != null"
+          :src="randomUser.data.results[0].picture.large"
+          alt="profile-pic"
+        />
       </div>
       <div class="type-container">
         <p>
@@ -83,6 +87,9 @@ export default {
     return {
       type: "",
     };
+  },
+  props: {
+    randomUser: Array,
   },
 };
 </script>

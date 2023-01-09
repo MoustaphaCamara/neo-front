@@ -1,10 +1,17 @@
 <template>
-  <div class="profile">
+  <div v-if="randomUser != null" class="profile">
+    <!-- <p><pre>{{ randomUser }}</pre></p> -->
     <h2>Statut : {{ title }}</h2>
-    <p>Nom : {{ name }}</p>
-    <p>E-mail : {{ email }}</p>
-    <p>Téléphone : {{ telephone }}</p>
-    <p>Planète d'origine : {{ planet }}</p>
+    <div class="avatar-user">
+      <img :src="randomUser.data.results[0].picture.large" alt="profile-pic" />
+      <p>
+        <em> Photo de {{ randomUser.data.results[0].name.first }}</em>
+      </p>
+    </div>
+    <p>Nom : {{ randomUser.data.results[0].name.first }}</p>
+    <p>E-mail : {{ randomUser.data.results[0].email }}</p>
+    <p>Téléphone : {{ randomUser.data.results[0].phone }}</p>
+    <p>Planète d'origine : {{ randomUser.data.results[0].location.city }}</p>
     <p>CV : {{ cv }}</p>
     <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
     <p v-show="website">Site internet : {{ website }}</p>
@@ -25,6 +32,7 @@ export default {
     planet: String,
     cv: String,
     action: String,
+    randomUser: Array,
   },
 };
 </script>

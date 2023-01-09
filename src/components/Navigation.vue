@@ -8,6 +8,12 @@
     </div>
 
     <div class="links">
+      <p>
+        Salut
+        <span v-if="randomUser != null" class="user">
+          {{ randomUser.data.results[0].name.first }}
+        </span>
+      </p>
       <router-link to="/connexion" class="link">
         <p>Connexion</p>
       </router-link>
@@ -44,6 +50,9 @@
 <script>
 export default {
   name: "Navigation",
+  props: {
+    randomUser: Array,
+  },
 };
 </script>
 
@@ -94,5 +103,10 @@ export default {
 
 .router-link-active p {
   color: var(--text-white);
+}
+.user {
+  font-size: 2rem;
+  color: cyan;
+  text-shadow: 0 0 15px cyan;
 }
 </style>

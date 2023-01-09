@@ -2,9 +2,8 @@
   <div class="candidate-container">
     <div class="left-part">
       <Profile
+        :randomUser="randomUser"
         title="Candidat"
-        name="Mouss"
-        email="dupont@gmail.com"
         telephone="07 01 02 03 04"
         planet="Mars"
         cv="pas uploadé"
@@ -26,6 +25,9 @@ import Profile from "../components/Profile.vue";
 export default {
   name: "CandidatePage",
   components: { Profile, OfferJob },
+  props: {
+    randomUser: Array,
+  },
 };
 </script>
 

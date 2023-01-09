@@ -1,19 +1,15 @@
 <template>
   <div class="registration-container">
-    <div class="inscription">
+    <div class="registration">
       <div class="inscription-logo">
-        <h1>Inscription</h1>
-
-        <div class="logo">
-          <i class="fa-regular fa-user"></i>
-          <!-- <img src="/" alt="logo"> -->
-          <!-- <img v-if="src" src="/" alt="logo"> -->
-        </div>
+        <i class="registration-logo fa-regular fa-user"></i>
+        <!-- <img src="/" alt="logo"> -->
+        <!-- <img v-if="src" src="/" alt="logo"> -->
       </div>
       <div class="type-container">
         <p>
           Vous êtes : <span v-if="type === 'Candidat'">un</span>
-          <span v-else>une</span> {{ type }}
+          <span v-else-if="type === 'Agence'">une</span> {{ type }}
         </p>
         <select v-model="type">
           <option disabled value="">Sélectionner</option>
@@ -50,6 +46,7 @@
 
         <label for="psw2">Confirmation du mot passe</label>
         <input id="psw2" type="password" name="password2" />
+        <input type="submit" value="S'inscrire" />
       </form>
       <!-- formulaire CANDIDAT -->
       <form v-if="type === 'Candidat'" class="form" action="/" method="post">
@@ -73,8 +70,8 @@
 
         <label for="psw2">Confirmation du mot passe</label>
         <input id="psw2" type="password" name="password2" required />
+        <input type="submit" value="S'inscrire" />
       </form>
-      <input type="submit" value="Confirmer" />
     </div>
   </div>
 </template>
@@ -99,14 +96,14 @@ export default {
   padding-top: 16px;
 }
 
-.logo {
+.registration-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid var(--bg-sable);
+  border: 1px solid var(--sable);
 }
 
 .fa-user {
@@ -132,11 +129,12 @@ form {
 .type-container p span {
   color: white;
   text-shadow: 2px 2px black;
+  padding: 16px 0;
 }
 select {
+  margin-bottom: 8px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-shadow: 2px 2px black;
-  margin: 16px 0;
 }
 </style>

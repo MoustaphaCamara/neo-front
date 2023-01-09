@@ -1,13 +1,12 @@
 <template>
   <div class="profile">
     <h2>Statut : {{ title }}</h2>
-    <img src="" alt="picture" />
     <p>Nom : {{ name }}</p>
     <p>E-mail : {{ email }}</p>
     <p>Téléphone : {{ telephone }}</p>
     <p>Planète : {{ planet }}</p>
     <p>CV : {{ cv }}</p>
-    <button class="apply">Voir les offres</button>
+    <button class="apply">{{ action }}</button>
   </div>
 </template>
 
@@ -16,20 +15,12 @@ export default {
   name: "Profile",
   props: {
     title: String,
-  },
-  data() {
-    return {
-      // title: "Candidat",
-      picture: "../assets/main-banner.jpg",
-      name: "Mouss",
-      email: "dupont@gmail.com",
-      telephone: "07 83 88 31 75",
-      planet: "Mars",
-      cv: "cv.pdf",
-    };
-  },
-  methods: {
-    fetchData() {},
+    name: String,
+    email: String,
+    telephone: String,
+    planet: String,
+    cv: String,
+    action: String,
   },
 };
 </script>
@@ -37,14 +28,17 @@ export default {
 <style>
 .apply {
   text-transform: uppercase;
-  background: var(--title-blue);
+  background: var(--blue);
   color: white;
   padding: 16px 40px;
   border-radius: 8px;
   transition: 0.3s ease;
+  width: 100%;
+  min-width: 157px;
+  max-width: 180px;
 }
 .apply:hover {
-  /* background: var(--bg-sable); */
+  /* background: var(--sable); */
   background: darkviolet;
   cursor: pointer;
   transform: scale(1.05);
@@ -57,7 +51,7 @@ export default {
   padding: 8px;
 }
 .profile h2 {
-  color: var(--title-blue);
+  color: var(--blue);
 }
 .profile p {
   color: white;

@@ -7,33 +7,21 @@
     </div>
 
     <div class="links">
-      <div class="type-connexion">
-        <router-link to="/agency/connexion" class="link">
-          <p>Connexion agence</p>
-        </router-link>
-
-        <router-link to="/candidate/connexion" class="link">
-          <p>Connexion candidat</p>
-        </router-link>
-      </div>
+      <router-link to="/connexion" class="link">
+        <p>Connexion</p>
+      </router-link>
 
       <router-link to="/registration" class="link">
         <p>Inscription</p>
       </router-link>
       <!-- candidat et agency seront cachés une fois le développement des fonctionnalités fait, là c'est pour naviguer tranquillement.. :) -->
       <!-- candidat -->
-      <router-link to="/candidate/home" class="link">
-        <p>PROFIL CANDIDAT</p>
+      <router-link to="/candidate" class="link">
+        <p>CANDIDAT</p>
       </router-link>
-      <!-- <router-link to="/candidate/profile" class="link">
-        <p>Là ou candidaté</p>
-      </router-link> -->
       <!-- agence -->
-      <!-- <router-link to="/agency/home" class="link">
-        <p>candidats à recruter par l'agence</p>
-      </router-link> -->
-      <router-link to="/agency/profile" class="link">
-        <p>Nos offres = PROFIL AGENCE</p>
+      <router-link to="/agency" class="link">
+        <p>AGENCE</p>
       </router-link>
       <!-- offres d'emplois -->
       <!-- <router-link to="/candidate/apply" class="link">
@@ -47,9 +35,6 @@
         <p>Déconnexion</p>
       </router-link>
     </div>
-
-    <!-- Afficher la navigation (router-view) -->
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -67,12 +52,6 @@ export default {
   align-items: center;
   padding: 10px;
   background: var(--bg-black);
-}
-
-.type-connexion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .links {
@@ -101,12 +80,11 @@ export default {
 .logo img {
   width: 100px;
 }
-
-/* quand on est sur une page : router-link-active */
+.logo.router-link-active {
+  background: none;
+}
 .router-link-active {
-  /* font-size: 1.5rem;
-  font-weight: bolder; */
-  background-color: var(--bg-sable);
+  background-color: var(--sable);
   border-radius: 0 15px 0 15px;
   transition: 0.2s;
 }

@@ -61,7 +61,7 @@ export default {
   height: auto;
   /* max-height: 25vh; */
   background: black;
-  color: var(--text-sable);
+  color: var(--sable);
   padding: 16px;
   text-align: center;
 }

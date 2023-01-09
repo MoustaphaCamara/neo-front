@@ -1,7 +1,15 @@
 <template>
-  <div class="container">
+  <div class="candidate-container">
     <div class="left-part">
-      <Profile title="DEIOJDEIJFIOJZRIOFJZR" />
+      <Profile
+        title="Candidat"
+        name="Mouss"
+        email="dupont@gmail.com"
+        telephone="07 01 02 03 04"
+        planet="Mars"
+        cv="pas uploadé"
+        action="Voir les offres"
+      />
     </div>
     <div class="right-part">
       <h1>Voici les offres disponibles actuellement</h1>
@@ -16,13 +24,13 @@
 import Offer from "../components/Offer.vue";
 import Profile from "../components/Profile.vue";
 export default {
+  name: "CandidatePage",
   components: { Profile, Offer },
 };
 </script>
 
 <style>
-.container {
-  background-color: var(--bg-gray);
+.candidate-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -43,22 +51,16 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   width: 75%;
-  background: linear-gradient(to right, var(--bg-gray), black);
-
-  /* background: repeating-linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.301),
-    transparent 200px
-  ); */
+  /* background: linear-gradient(to right, var(--bg-gray), black); */
   gap: 5px;
 }
 .right-part h1 {
   width: 100%;
   border-bottom: 1px solid white;
-  /* background-color: var(--bg-sable); */
-  /* color: var(--text-hover-orange); */
+  /* background-color: var(--sable); */
+  /* color: var(--orange); */
   padding: 5px 10px;
   font-weight: 100;
-  color: var(--text-hover-orange);
+  color: var(--orange);
 }
 </style>

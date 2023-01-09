@@ -1,14 +1,13 @@
 :root {
-  --title-blue: #7aa2c8;
+  --blue: #7aa2c8;
 
-  --text-sable: #bea684;
+  /* --sable: #bea684; */
+  --sable: #bea684;
   --text-white: #fdfdfd;
-  --text-hover-orange: #f76605;
-  --text-hover-blue: #7aa2c8;
+  --orange: #f76605;
 
   --bg-black: black;
   --bg-gray: #2c2c2c;
-  --bg-sable: #bea684;
 
   --font-title: "Rowdies";
   --font-text: "Roboto Condensed";
@@ -40,4 +39,67 @@ body {
   width: 100%;
   height: 100vh;
   /* max-width: 1280px; */
+}
+
+/* all pages container details */
+
+.home-container::after,
+.connexion-container::after,
+.registration-container::after,
+.banner-container::after,
+.candidate-container::after,
+.agency-container::after,
+.create-offer-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* home background */
+
+/* connexion background */
+.connexion-container::after {
+  background: url("assets/planet.jpg");
+  background-size: cover;
+}
+/* registration background */
+.registration-container::after {
+  background: url("assets/space-man.jpg");
+  background-size: cover;
+}
+/* create offer background */
+.create-offer-container::after {
+  background: url("assets/explore.jpg");
+  background-size: cover;
+}
+/* candidate container background */
+.candidate-container::after {
+  background: url("assets/explore.jpg");
+  background-size: cover;
+}
+/* agency container background */
+.agency-container::after {
+  background: url("assets/explore.jpg");
+  background-size: cover;
+}
+.home-container,
+.connexion-container,
+.registration-container,
+.candidate-container,
+.agency-container,
+.create-offer-container {
+  background: linear-gradient(to bottom, black, transparent, black);
+  /* height: 80vh; */
+  min-height: 70vh;
+  height: fit-content;
+}
+.connexion,
+.registration,
+.create-offer {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }

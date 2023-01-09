@@ -1,6 +1,7 @@
 <template>
   <div class="banner-container">
-    <h1>986 111 offres d'emploi disponibles !</h1>
+    <h1>Bienvenue sur la plateforme NeoSettlers</h1>
+    <h2>986 111 offres d'emploi disponibles !</h2>
     <p>Rechercher des offres par planète ou par secteur d’activité.</p>
   </div>
 </template>
@@ -13,18 +14,25 @@ export default {
 
 <style scoped>
 .banner-container {
-  background-image: url("../assets/main-banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+  background: linear-gradient(to bottom, black, transparent, black);
+  min-height: 70vh;
+  height: fit-content;
   padding: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-h1,
+.banner-container::after {
+  background-image: url("../assets/main-banner.jpg");
+  background-size: cover;
+}
+.banner-container h1 {
+  margin: 72px auto;
+  color: white;
+  text-shadow: 0 0 12px white;
+  text-transform: uppercase;
+}
+.banner-container h2,
 p {
   text-align: center;
   color: white;

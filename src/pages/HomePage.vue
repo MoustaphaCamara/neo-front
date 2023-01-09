@@ -1,6 +1,5 @@
 <template>
   <div class="home-container">
-    <h1>Home</h1>
     <Banniere />
   </div>
 </template>

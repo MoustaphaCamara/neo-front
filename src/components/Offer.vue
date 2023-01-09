@@ -30,7 +30,7 @@ export default {
 
 <style>
 .offer {
-  background-color: var(--bg-sable);
+  background-color: var(--sable);
   width: 48%;
   padding: 10px;
   border-radius: 10px;
@@ -44,11 +44,10 @@ export default {
 }
 
 .offer h1 {
-  color: var(--title-blue);
+  color: var(--blue);
   font-size: 30px;
   font-weight: 100;
   text-shadow: 1px 1px 2px var(--bg-gray);
-  
 }
 
 .offer p {
@@ -67,7 +66,7 @@ export default {
   width: 100px;
   border-radius: 50px;
   background-color: var(--bg-gray);
-  border: 1px solid var(--text-hover-orange);
+  border: 1px solid var(--orange);
   color: var(--text-white);
   border-radius: 0 20px 0 20px;
   transition: 0.3s;

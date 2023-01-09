@@ -4,6 +4,7 @@
     <h2>Statut : {{ title }}</h2>
     <div class="avatar-container">
       <img
+        v-if="randomUser != null"
         class="user-avatar"
         :src="randomUser.data.results[0].picture.large"
         alt="profile-pic"

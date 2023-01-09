@@ -1,7 +1,9 @@
 <template>
   <div class="banner-container">
     <h1>Bienvenue sur la plateforme NeoSettlers</h1>
-    <h2>Enchanté, {{ randomUser.data.results[0].name.first }}</h2>
+    <h2 v-if="randomUser != null">
+      Enchanté, {{ randomUser.data.results[0].name.first }}
+    </h2>
     <h2>986 111 offres d'emploi disponibles !</h2>
     <p>Rechercher des offres par planète ou par secteur d’activité.</p>
   </div>

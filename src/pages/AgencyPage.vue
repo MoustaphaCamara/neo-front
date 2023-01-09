@@ -2,6 +2,7 @@
   <div class="agency-container">
     <div class="left-part">
       <Profile
+        :randomUser="randomUser"
         title="Agence"
         name="The Settlers"
         email="settlers@gmail.com"
@@ -32,6 +33,9 @@ export default {
     };
   },
   components: { Profile, OfferEmployee },
+  props: {
+    randomUser: Array,
+  },
 };
 </script>
 

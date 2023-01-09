@@ -15,10 +15,10 @@
     </div>
     <p>Nom : {{ randomUser.data.results[0].name.first }}</p>
     <p>E-mail : {{ randomUser.data.results[0].email }}</p>
+    <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
     <p>Téléphone : {{ randomUser.data.results[0].phone }}</p>
     <p>Planète d'origine : {{ randomUser.data.results[0].location.city }}</p>
     <p>CV : {{ cv }}</p>
-    <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
     <p v-show="website">Site internet : {{ website }}</p>
     <button class="apply">{{ action }}</button>
   </div>

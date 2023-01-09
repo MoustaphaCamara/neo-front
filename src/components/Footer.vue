@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <img
-      src="https://i.ibb.co/JrhTCp2/logo-neosettlers.png"
+      src="../assets/logo-neosettlers.png"
       alt="logo-footer"
       class="logo-footer"
     />
@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  /* border: 1px solid red; */
-}
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -84,9 +81,16 @@ export default {
   margin-top: 8px;
 }
 .info:hover,
-.term:hover {
+.term:hover,
+.icon:hover {
   color: var(--text-white);
   transform: scale(1.2);
+  cursor: pointer;
+}
+.info:active,
+.term:active,
+.icon:active {
+  transform: scale(2);
 }
 .social-container {
   width: 10%;
@@ -99,10 +103,6 @@ export default {
 .icon {
   font-size: 24px;
   transition: 0.3s ease;
-}
-.icon:hover {
-  color: var(--text-white);
-  transform: scale(1.2);
 }
 .pegi {
   width: 100px;

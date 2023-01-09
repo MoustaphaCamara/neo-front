@@ -40,7 +40,10 @@ body {
   height: 100vh;
   /* max-width: 1280px; */
 }
-
+::selection {
+  background: var(--orange);
+  color: black;
+}
 /* all pages container details */
 
 .home-container::after,
@@ -55,7 +58,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 130%;
   z-index: -1;
 }
 /* home background */
@@ -92,9 +95,8 @@ body {
 .agency-container,
 .create-offer-container {
   background: linear-gradient(to bottom, black, transparent, black);
-  /* height: 80vh; */
-  min-height: 70vh;
   height: fit-content;
+  min-height: 50vh;
 }
 .connexion,
 .registration,

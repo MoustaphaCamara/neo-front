@@ -4,8 +4,10 @@
     <p>Nom : {{ name }}</p>
     <p>E-mail : {{ email }}</p>
     <p>Téléphone : {{ telephone }}</p>
-    <p>Planète : {{ planet }}</p>
+    <p>Planète d'origine : {{ planet }}</p>
     <p>CV : {{ cv }}</p>
+    <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
+    <p v-show="website">Site internet : {{ website }}</p>
     <button class="apply">{{ action }}</button>
   </div>
 </template>
@@ -16,6 +18,8 @@ export default {
   props: {
     title: String,
     name: String,
+    ceo_name: String,
+    website: String,
     email: String,
     telephone: String,
     planet: String,

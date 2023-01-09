@@ -1,8 +1,9 @@
 <template>
   <div class="nav-container">
     <div>
+      <!-- ancien : https://i.ibb.co/JrhTCp2/logo-neosettlers.png -->
       <router-link to="/" class="link logo">
-        <img src="https://i.ibb.co/JrhTCp2/logo-neosettlers.png" alt="logo" />
+        <img src="../assets/logo-neosettlers.png" alt="logo" />
       </router-link>
     </div>
 
@@ -32,7 +33,9 @@
       </router-link>
       <!-- deconnexion -->
       <router-link to="/" class="link">
-        <p>Déconnexion</p>
+        <p>
+          <i class="fa-solid fa-power-off"></i>
+        </p>
       </router-link>
     </div>
   </div>

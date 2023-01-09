@@ -13,19 +13,19 @@
     </div>
     <div class="right-part">
       <h1>Offres de recrutement</h1>
-      <Offer />
-      <Offer />
-      <Offer />
+      <OfferJob />
+      <OfferJob />
+      <OfferJob />
     </div>
   </div>
 </template>
 
 <script>
-import Offer from "../components/Offer.vue";
+import OfferJob from "../components/OfferJob.vue";
 import Profile from "../components/Profile.vue";
 export default {
   name: "CandidatePage",
-  components: { Profile, Offer },
+  components: { Profile, OfferJob },
 };
 </script>
 

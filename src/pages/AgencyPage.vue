@@ -8,24 +8,30 @@
         telephone="07 01 02 03 04"
         planet="Mars"
         cv="pas uploadé"
-        action="Voir les offres"
+        action="Voir les candidats"
+        ceo_name="Agent Grine"
       />
     </div>
     <div class="right-part">
       <h1>Candidats à recruter</h1>
-      <Offer />
-      <Offer />
-      <Offer />
+      <OfferEmployee />
+      <OfferEmployee />
+      <OfferEmployee />
     </div>
   </div>
 </template>
 
 <script>
-import Offer from "../components/Offer.vue";
+import OfferEmployee from "../components/OfferEmployee.vue";
 import Profile from "../components/Profile.vue";
 export default {
   name: "AgencyPage",
-  components: { Profile, Offer },
+  data() {
+    return {
+      planets: ["Terre", "Jupiter"],
+    };
+  },
+  components: { Profile, OfferEmployee },
 };
 </script>
 

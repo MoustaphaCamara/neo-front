@@ -12,7 +12,7 @@
       />
     </div>
     <div class="right-part">
-      <h1>Voici les offres disponibles actuellement</h1>
+      <h1>Offres de recrutement</h1>
       <Offer />
       <Offer />
       <Offer />

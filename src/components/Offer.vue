@@ -30,7 +30,9 @@ export default {
 
 <style>
 .offer {
-  background-color: var(--sable);
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--sable);
+  /* background-color: var(--sable); */
   width: 48%;
   padding: 10px;
   border-radius: 10px;

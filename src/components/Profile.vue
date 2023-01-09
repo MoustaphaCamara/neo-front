@@ -14,9 +14,12 @@
 <script>
 export default {
   name: "Profile",
+  props: {
+    title: String,
+  },
   data() {
     return {
-      title: "Candidat",
+      // title: "Candidat",
       picture: "../assets/main-banner.jpg",
       name: "Mouss",
       email: "dupont@gmail.com",

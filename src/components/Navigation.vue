@@ -29,16 +29,16 @@
         <p>Là ou candidaté</p>
       </router-link> -->
       <!-- agence -->
-      <router-link to="/agency/home" class="link">
+      <!-- <router-link to="/agency/home" class="link">
         <p>candidats à recruter par l'agence</p>
-      </router-link>
+      </router-link> -->
       <router-link to="/agency/profile" class="link">
         <p>Nos offres = PROFIL AGENCE</p>
       </router-link>
       <!-- offres d'emplois -->
-      <router-link to="/candidate/apply" class="link">
+      <!-- <router-link to="/candidate/apply" class="link">
         <p>Postuler (candidat)</p>
-      </router-link>
+      </router-link> -->
       <router-link to="/agency/create" class="link">
         <p>Créer offre (agence)</p>
       </router-link>

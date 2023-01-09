@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="left-part">
-      <Profile />
+      <Profile title="DEIOJDEIJFIOJZRIOFJZR" />
     </div>
     <div class="right-part">
       <h1>Voici les offres disponibles actuellement</h1>
@@ -59,6 +59,6 @@ export default {
   /* color: var(--text-hover-orange); */
   padding: 5px 10px;
   font-weight: 100;
-  color: var( --text-hover-orange);
+  color: var(--text-hover-orange);
 }
 </style>

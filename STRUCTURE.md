@@ -34,4 +34,16 @@ STYLES
 
 Style par défaut de l'application : style.css
 Style des components : <style scoped> dans chaque component
+
+ Comment faire un rendu conditionnel en vue
+       <div class="type-container">
+        <p>Vous êtes : {{ type }}</p>
+        <select v-model="type">
+          <option disabled value="">Sélectionner</option>
+          <option>Candidat</option>
+          <option>Agence</option>
+        </select>
+      </div>
+      <label for="name" v-if="type === 'Agence'">Nom de l'agence</label>
+        <label for="name" v-if="type === 'Candidat'">Nom du candidat</label>
   -->

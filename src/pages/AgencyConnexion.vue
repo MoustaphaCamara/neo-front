@@ -28,20 +28,21 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .connexion-container,
-.registration-container, .create-offer-container {
+.registration-container,
+.create-offer-container {
   /* background: black; */
   background: url("../assets/planet.jpg");
   background-size: cover;
 }
 h1 {
-
   color: var(--text-sable);
   text-shadow: 2px 0 black;
 }
 .connexion,
-.inscription, .create-offer{
+.inscription,
+.create-offer {
   width: 40%;
   margin: 0 auto;
   text-align: center;
@@ -62,7 +63,12 @@ h1 {
 }
 .name,
 .password,
-.email, .offer-title,.offer-content, .planet-name,.salary, .agency-id  {
+.email,
+.offer-title,
+.offer-content,
+.planet-name,
+.salary,
+.agency-id {
   display: flex;
   flex-direction: column;
   gap: 4px;

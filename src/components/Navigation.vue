@@ -73,7 +73,7 @@
 export default {
   name: "Navigation",
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

@@ -34,7 +34,7 @@ export default {
   },
   components: { Profile, OfferEmployee },
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

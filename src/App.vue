@@ -17,9 +17,8 @@ export default {
   },
   methods: {
     fetchData() {
-      axios
-        .get("https://randomuser.me/api")
-        .then((res) => (this.randomUser = res));
+      axios.get("http://neo-back/planet").then((res) => console.log(res));
+      // routes : https://documenter.getpostman.com/view/25228793/2s8Z75UW2r
     },
   },
 };

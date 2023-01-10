@@ -1,26 +1,32 @@
 <template>
   <div v-if="randomUser != null" class="profile">
     <!-- <p><pre>{{ randomUser }}</pre></p> -->
-    <h2>Statut : {{ title }}</h2>
-    <div class="avatar-container">
-      <img
-        v-if="randomUser != null"
-        class="user-avatar"
-        :src="randomUser.data.results[0].picture.large"
-        alt="profile-pic"
-      />
-      <p>
-        <em> Photo de {{ randomUser.data.results[0].name.first }}</em>
-      </p>
+    <div class="profil-avatar">
+    
+      <h2>Statut : {{ title }}</h2>
+        <div class="avatar-container">
+          <img v-if="randomUser != null" class="user-avatar" :src="randomUser.data.results[0].picture.large" alt="profile-pic"/>
+          <p>
+            <em> Photo de {{ randomUser.data.results[0].name.first }}</em>
+          </p>
+        </div>
     </div>
-    <p>Nom : {{ randomUser.data.results[0].name.first }}</p>
-    <p>E-mail : {{ randomUser.data.results[0].email }}</p>
-    <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
-    <p>Téléphone : {{ randomUser.data.results[0].phone }}</p>
-    <p>Planète d'origine : {{ randomUser.data.results[0].location.city }}</p>
-    <p>CV : {{ cv }}</p>
-    <p v-show="website">Site internet : {{ website }}</p>
-    <button class="apply">{{ action }}</button>
+
+    <div class="profil-information">
+      <p>Nom : {{ randomUser.data.results[0].name.first }}</p>
+      <p>E-mail : {{ randomUser.data.results[0].email }}</p>
+      <p v-show="ceo_name">CEO Name : {{ ceo_name }}</p>
+      <p>Téléphone : {{ randomUser.data.results[0].phone }}</p>
+      <p>Planète d'origine : {{ randomUser.data.results[0].location.city }}</p>
+      <p>CV : {{ cv }}</p>
+      <p v-show="website">Site internet : {{ website }}</p>
+      
+    </div>
+
+    <div class="check-offer">
+      <button class="apply">{{ action }}</button>
+    </div>
+
   </div>
 </template>
 
@@ -46,7 +52,45 @@ export default {
 .user-avatar {
   border-radius: 50%;
   box-shadow: 0 0 0px 5px var(--blue), 0 0 15px 10px var(--sable);
+
 }
+
+.profile {
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid red;
+}
+
+.profile h2 {
+  color: var(--blue);
+}
+.profile p {
+  color: white;
+}
+
+.profil-avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid yellow;
+
+}
+
+.profil-information {
+  border: 1px solid orange;
+}
+
+.check-offer {
+  text-align: center;
+  border: 1px solid blue;
+
+}
+
+
 .apply {
   text-transform: uppercase;
   background: var(--blue);
@@ -64,17 +108,32 @@ export default {
   cursor: pointer;
   transform: scale(1.05);
 }
+
+
+
+@media screen and (max-width: 1150px) {
+
 .profile {
-  height: 50vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 8px;
+  flex-wrap: wrap;
+  border: 1px solid red;
+
 }
-.profile h2 {
-  color: var(--blue);
+
+.profil-avatar {
+  max-width: 25%;
+
 }
-.profile p {
-  color: white;
+
+.profil-information {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+
+ 
 }
+
+}
+
 </style>

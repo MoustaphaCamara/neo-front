@@ -65,4 +65,20 @@ export default {
   font-weight: 100;
   color: var(--orange);
 }
+
+@media screen and (max-width: 1150px) {
+
+  .left-part {
+
+    width: 100%;
+
+  }
+
+  .right-part {
+    width: 100%;
+  }
+
+  
+}
+
 </style>

@@ -1,3 +1,4 @@
+# Neosettlers Front
 <div align="center">
 <img  src="https://cdn-icons-png.flaticon.com/512/4180/4180907.png" width="100px">
 </div>
@@ -8,8 +9,6 @@ Figma Wireframe
 ```
 https://www.figma.com/file/4UD2bXKEyBmZGMyVnsSet8/Untitled?node-id=0%3A1&t=GPpRdljEaD8JZuzA-1
 ```
-
-# Neo-front project
 
 This is the front-end part of the NEOSETTLERS project, pushed with Vite & Vue3
 

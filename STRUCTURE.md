@@ -47,3 +47,5 @@ Style des components : <style scoped> dans chaque component
       <label for="name" v-if="type === 'Agence'">Nom de l'agence</label>
         <label for="name" v-if="type === 'Candidat'">Nom du candidat</label>
   -->
+
+<!-- local storage -->

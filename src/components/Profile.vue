@@ -37,7 +37,7 @@ export default {
     planet: String,
     cv: String,
     action: String,
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

@@ -89,7 +89,7 @@ export default {
     };
   },
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

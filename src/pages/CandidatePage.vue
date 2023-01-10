@@ -26,7 +26,7 @@ export default {
   name: "CandidatePage",
   components: { Profile, OfferJob },
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

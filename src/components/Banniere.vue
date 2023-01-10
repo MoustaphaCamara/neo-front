@@ -13,7 +13,7 @@
 export default {
   name: "Banniere",
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

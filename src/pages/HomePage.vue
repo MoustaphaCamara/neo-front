@@ -10,7 +10,7 @@ import Banniere from "../components/Banniere.vue";
 export default {
   components: { Banniere },
   props: {
-    randomUser: Array,
+    randomUser: Array | Object,
   },
 };
 </script>

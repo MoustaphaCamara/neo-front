@@ -14,12 +14,34 @@
           {{ randomUser.data.results[0].name.first }}
         </span>
       </p>
-      <router-link to="/connexion" class="link">
+
+      <router-link to="/connexion" class="link connexion">
         <p>Connexion</p>
+
+        <div class="connexion-niv2">
+          <router-link to="/connexion" class="link">
+            <p>Agence</p>
+          </router-link>
+          <router-link to="/connexion" class="link">
+            <p>Candidat</p>
+          </router-link>
+
+
+        </div>
       </router-link>
 
-      <router-link to="/registration" class="link">
+      <router-link to="/registration" class="link registration">
         <p>Inscription</p>
+
+        <div class="registration-niv2">
+          <router-link to="/registration" class="link">
+            <p>Agence</p>
+          </router-link>
+          <router-link to="/registration" class="link">
+            <p>Candidat</p>
+          </router-link>
+        </div>
+
       </router-link>
       <!-- candidat et agency seront cachés une fois le développement des fonctionnalités fait, là c'est pour naviguer tranquillement.. :) -->
       <!-- candidat -->
@@ -109,4 +131,54 @@ export default {
   color: cyan;
   text-shadow: 0 0 15px cyan;
 }
+
+.connexion {
+  position: relative;
+ 
+}
+
+.connexion-niv2 {
+
+  display: none;
+
+}
+
+.connexion:hover .connexion-niv2{
+  transition: 0.2s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid  var(--sable);
+  border-radius: 0 0 10px 10px;
+
+}
+
+/*  */
+
+.registration {
+  position: relative;
+ 
+}
+
+.registration-niv2 {
+
+  display: none;
+  transition: 0.2s;
+
+}
+
+.registration:hover .registration-niv2{
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid  var(--sable);
+  border-radius: 0 0 10px 10px;
+
+}
+
+
+
 </style>

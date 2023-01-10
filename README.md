@@ -1,3 +1,6 @@
+<div align="center">
+<img  src="https://cdn-icons-png.flaticon.com/512/4180/4180907.png" width="100px">
+</div>
 
 - [Link to project's back-end](https://github.com/SebastienHerbreteau/Neo-back)
 

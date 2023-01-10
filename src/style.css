@@ -38,7 +38,8 @@ body {
 #app {
   width: 100%;
   height: 100vh;
-  /* max-width: 1280px; */
+  max-width: 1280px;
+  margin: auto;
 }
 ::selection {
   background: var(--orange);
@@ -57,8 +58,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  height: 119vh;
   width: 100%;
-  height: 130%;
   z-index: -1;
 }
 /* home background */
@@ -67,36 +68,50 @@ body {
 .connexion-container::after {
   background: url("assets/planet.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  
+
 }
 /* registration background */
 .registration-container::after {
   background: url("assets/space-man.jpg");
   background-size: cover;
+  background-attachment: fixed;
+
 }
 /* create offer background */
 .create-offer-container::after {
   background: url("assets/explore.jpg");
   background-size: cover;
+  background-attachment: fixed;
+
 }
 /* candidate container background */
 .candidate-container::after {
   background: url("assets/explore.jpg");
   background-size: cover;
+  background-attachment: fixed;
+
+  
 }
 /* agency container background */
 .agency-container::after {
   background: url("assets/explore.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
+
+
 .home-container,
 .connexion-container,
 .registration-container,
 .candidate-container,
 .agency-container,
 .create-offer-container {
-  background: linear-gradient(to bottom, black, transparent, black);
+  background: linear-gradient(to bottom, black , transparent, black);
   height: fit-content;
   min-height: 50vh;
+  
 }
 .connexion,
 .registration,

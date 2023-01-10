@@ -1,13 +1,12 @@
 <template>
   <div class="nav-container">
-    <div>
+
+    <div class="logo-user">
       <!-- ancien : https://i.ibb.co/JrhTCp2/logo-neosettlers.png -->
       <router-link to="/" class="link logo">
         <img src="../assets/logo-neosettlers.png" alt="logo" />
       </router-link>
-    </div>
 
-    <div class="links">
       <p>
         Salut
         <span v-if="randomUser != null" class="user">
@@ -15,10 +14,20 @@
         </span>
       </p>
 
+    </div>
+
+    <div class="wrap">
+      <img src="../assets/menu_burger.png" alt="logo" class="wrap-img"/>
+    </div>
+
+    <div class="links">
+      
+
       <router-link to="/connexion" class="link connexion">
         <p>Connexion</p>
 
         <div class="connexion-niv2">
+          
           <router-link to="/connexion" class="link">
             <p>Agence</p>
           </router-link>
@@ -86,6 +95,19 @@ export default {
   align-items: center;
   padding: 10px;
   background: var(--bg-black);
+  border: 1px solid red;
+}
+
+.logo-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.wrap-img {
+  width: 50px;
+  display: none;
 }
 
 .links {
@@ -176,6 +198,29 @@ export default {
   position: absolute;
   border: 1px solid  var(--sable);
   border-radius: 0 0 10px 10px;
+
+}
+
+
+@media screen and (max-width: 830px) {
+
+  .links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .wrap-img {
+  display: block;
+}
+
+.wrap-img:hover {
+
+  background-color: red;
+
+}
+
+
+
 
 }
 

@@ -1,4 +1,5 @@
 <template>
+
   <div class="candidate-container">
     <div class="left-part">
       <Profile
@@ -66,12 +67,10 @@ export default {
   color: var(--orange);
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1000px) {
 
   .left-part {
-
     width: 100%;
-
   }
 
   .right-part {

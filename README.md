@@ -1,48 +1,38 @@
-Lien vers le back-end
-- [Lien vers le back-end](https://github.com/SebastienHerbreteau/Neo-back)
 
-Maquette Figma
+- [Link to project's back-end](https://github.com/SebastienHerbreteau/Neo-back)
+
+Figma Wireframe
 ```
 https://www.figma.com/file/4UD2bXKEyBmZGMyVnsSet8/Untitled?node-id=0%3A1&t=GPpRdljEaD8JZuzA-1
 ```
 
-# Projet Neo-front
+# Neo-front project
 
-Partie front du projet NEOSETTLERS développée avec Vue3
+This is the front-end part of the NEOSETTLERS project, pushed with Vite & Vue3
 
-## Pour récupérer et lancer le projet
-
-Effectuer un git bash here sur votre bureau
+## Launch project
 
 ```
 git clone https://github.com/MoustaphaCamara/neo-front
 ```
 
-Accéder au dossier cloné :
+Switch to folder and install dependencies
 
 ```
 cd neo-front
-```
-
-Et pour récupérer toutes les dépendances installées :
-
-```
 npm install
 ```
-
-ouvrir avec vs code :
-
+Open with VSCODE before launching server
 ```
 code .
 ```
-
-lancer le projet dans le navigateur :
+Open integrated terminal & run server (check package.json scripts)
 
 ```
 npm run dev
 ```
 
-Le terminal va afficher le localhost sur lequel le site est lancé, copier-coller dans le navigateur ou control+clic
+Integrated terminal will display the localhost port in which the application is listened. copy/paste on browser on CTRL+left Clic.
 
 ```
   VITE v4.0.4  ready in 1091 ms
@@ -53,20 +43,22 @@ Le terminal va afficher le localhost sur lequel le site est lancé, copier-colle
 
 ```
 
-# Mettre à jour le projet (envoyer/récupérer)
+# Update project
 
-## Envoyer MES données au repo Git :
+## Commit to repo :
 
 ```
 git add .
-git commit -m "commentaire"
+git commit -m "contributor - something"
 git push -u origin main
 ```
-git add . <br />
-git add README.md par exemple pour ajouter un seul fichier <br />
-ou git add router pour ajouter tout le dossier router
-## Récupérer les données du repo :
+git add file-name or folder-name <br />
+```
+git add README.md
+```
+## Fetch repo's data locally :
 
 ```
 git pull
 ```
+Check conflicts and accept/reject incoming changes

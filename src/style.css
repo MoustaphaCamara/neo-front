@@ -65,7 +65,7 @@ body {
 
 /* connexion background */
 .connexion-container::after {
-  background: url("assets/planet.jpg");
+  background: url("assets/explore.jpg");
   background-size: cover;
 }
 /* registration background */

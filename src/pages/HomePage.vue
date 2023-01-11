@@ -1,16 +1,20 @@
 <template>
   <div class="home-container">
-    <Banniere :randomUser="randomUser" />
+    <!-- <div v-for="planet in planets" :key="planet.id">
+      <p style="color: white">
+        {{ planet.id }} - Planète du nom de {{ planet.name }}
+      </p>
+    </div> -->
+    <Banniere :planets="planets" />
   </div>
 </template>
 
 <script>
-// https://randomuser.me/api
 import Banniere from "../components/Banniere.vue";
 export default {
   components: { Banniere },
   props: {
-    randomUser: Array | Object,
+    planets: Array,
   },
 };
 </script>

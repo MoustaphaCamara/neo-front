@@ -9,7 +9,7 @@ export default {
   name: "App",
   data() {
     return {
-      randomUser: null,
+      planets: null,
     };
   },
   created() {
@@ -17,7 +17,15 @@ export default {
   },
   methods: {
     fetchData() {
-      axios.get("http://neo-back/planet").then((res) => console.log(res));
+      const url = "http://neo-back/planet";
+      axios
+        .get(url, {
+          headers: {
+            "Access-Control-Allow-Headers": "*",
+          },
+        })
+        .then((res) => (this.planets = res.data))
+        .then((planets) => console.log(planets));
       // routes : https://documenter.getpostman.com/view/25228793/2s8Z75UW2r
     },
   },
@@ -26,8 +34,8 @@ export default {
 
 <template>
   <div>
-    <Navigation :randomUser="randomUser" />
-    <router-view :randomUser="randomUser"></router-view>
+    <Navigation :planets="planets" />
+    <router-view :planets="planets"></router-view>
     <Footer />
   </div>
 </template>

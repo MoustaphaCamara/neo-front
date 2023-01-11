@@ -103,7 +103,8 @@ input {
   width: 200px;
   align-self: center;
 }
-input[type="submit"] {
+input[type="submit"],
+.data-button {
   color: var(--sable);
   border: 2px solid var(--sable);
   padding: 16px;
@@ -114,7 +115,8 @@ input[type="submit"] {
   margin-top: 8px;
   background: rgba(0, 0, 0, 0.788);
 }
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+.data-button:hover {
   background: black;
   box-shadow: inset 0 0 30px var(--sable);
   transform: scale(1.1);

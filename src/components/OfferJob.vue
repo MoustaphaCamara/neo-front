@@ -83,7 +83,7 @@ export default {
 }
 
 p span {
-  color: red;
+  color: var(--orange);
 }
 
 @media screen and (max-width: 850px) {

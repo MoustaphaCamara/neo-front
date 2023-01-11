@@ -57,7 +57,7 @@ import OfferJob from "../components/OfferJob.vue";
 h2{
 
   color: black;
-  padding: 55px;
+  padding: 35px;
   text-align: center;
 }
 

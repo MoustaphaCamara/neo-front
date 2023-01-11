@@ -42,9 +42,8 @@ import OfferJob from "../components/OfferJob.vue";
 </script>
 
 <style>
-.search-section,
-.search-section h2 {
-  background-color: rgb(255, 255, 255);
+.search-section, .search-section h2{
+  background-color: var(--sable);
   color: black;
   text-align: center;
   padding: 32px;
@@ -56,8 +55,10 @@ import OfferJob from "../components/OfferJob.vue";
   justify-content: center;
 }
 
-h2 {
-  color: white;
+h2{
+
+  color: black;
+  padding: 35px;
   text-align: center;
 }
 

@@ -77,6 +77,11 @@ export default {
     planets: Array,
   },
 };
+
+
+
+
+
 </script>
 
 <style scoped>
@@ -184,7 +189,9 @@ export default {
   border-radius: 0 0 10px 10px;
 }
 
-@media screen and (max-width: 830px) {
+
+@media screen and (max-width: 850px) {
+
   .links {
     display: none;
     flex-direction: column;
@@ -198,4 +205,12 @@ export default {
     background-color: red;
   }
 }
+
+.wrap-img:hover {
+
+  background-color: red;
+
+}
+
+
 </style>

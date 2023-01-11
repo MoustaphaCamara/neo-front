@@ -39,17 +39,17 @@
           <img v-if="randomUser != null" class="user-avatar" src="https://picsum.photos/100" alt="profile-pic"/>
         </div>
 
-        <p><em> Photo de Frédéric</em></p>
+        <p><em> Photo de Mouss</em></p>
 
     </div>
 
     <div class="profil-information">
-
-      <p>Nom : Boussemart</p>
-      <p>E-mail : frederic.bsm@gmail.com</p>
-      <p v-show="ceo_name">CEO Name : Moi meme</p>
+      <h2>Détails</h2>
+      <p>Nom : Mousss</p>
+      <p>E-mail : mouss.carter@gmail.com</p>
+      <p v-show="ceo_name">CEO Name : Carter</p>
       <p>Téléphone : +33 06 95 47 78 63</p>
-      <p>Planète d'origine : Terre</p>
+      <p>Planète d'origine : Mars</p>
       <p>CV : Télécharger</p>
       <p v-show="website">Site internet : Auncun</p>
       
@@ -83,11 +83,6 @@ export default {
 
 <style>
 
-.profil-information p {
-  white-space: nowrap;
-  padding: 5px;
-}
-
 .user-avatar {
   border-radius: 50%;
   box-shadow: 0 0 0px 5px var(--blue), 0 0 15px 10px var(--sable);
@@ -95,17 +90,18 @@ export default {
 }
 
 .profil {
-  /* height: 50vh; */
+ 
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 8px;
-  /* border: 1px solid red; */
+ 
 }
 
 .profil h2 {
   color: var(--blue);
+  text-decoration: underline;
 }
 .profil p {
   color: white;
@@ -118,21 +114,44 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid yellow; */
+  position: relative;
+
+}
+
+.profil-avatar::before {
+  content: "";
+  background-color: gray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  border-radius: 10px;
 
 }
 
 .profil-information {
-  /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+.profil-information h2 {
+  margin: 20px 0 20px 0;
+  
+}
+
+h2 {
+  text-shadow: 0 0px 2px black;
+}
+
+.profil-information p {
+  white-space: nowrap;
+  padding: 5px;
+}
+
 .check-offer {
   text-align: center;
   margin-top: 10px;
-  /* border: 1px solid blue; */
 
 }
 
@@ -145,11 +164,9 @@ export default {
   border-radius: 8px;
   transition: 0.3s ease;
   width: 90%;
-  /* min-width: 180px;
-  max-width: 200px; */
+ 
 }
 .apply:hover {
-  /* background: var(--sable); */
   background: darkviolet;
   cursor: pointer;
   transform: scale(1.05);
@@ -164,19 +181,24 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* border: 1px solid red; */
+
 }
 
 .profil-avatar {
-  width: 30%;
+  width: 35%;
 
 }
 
 .profil-information {
-  width: 40%;
+  width: 35%;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 0;
  
+}
+
+.profil-information h2 {
+  margin: 0 0 0 0;
 }
 
 .check-offer {
@@ -190,14 +212,13 @@ export default {
 
 @media screen and (max-width: 720px) {
 
- 
   .profil-avatar {
-    width: 25%;
+    width: 40%;
 
   }
 
   .profil-information {
-    width: 75%;
+    width: 60%;
   }
 
   .check-offer {

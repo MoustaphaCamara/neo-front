@@ -21,6 +21,7 @@ export default {
   background: linear-gradient(to bottom, black, transparent, black);
   min-height: 70vh;
   height: fit-content;
+  width: 100%;
   padding: 50px;
   display: flex;
   flex-direction: column;

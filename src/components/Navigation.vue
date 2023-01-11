@@ -85,6 +85,11 @@ export default {
     randomUser: Array | Object,
   },
 };
+
+
+
+
+
 </script>
 
 <style scoped>
@@ -202,7 +207,7 @@ export default {
 }
 
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
 
   .links {
     display: none;
@@ -220,10 +225,6 @@ export default {
 }
 
 
-
-
 }
-
-
 
 </style>

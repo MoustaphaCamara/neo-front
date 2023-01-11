@@ -1,38 +1,40 @@
 <template>
   <div class="home-container">
     <Banniere :randomUser="randomUser" />
-    
-  <div class="search-section"> 
-    <h2>Tu recherches une offre en particulier ?</h2>
-    <form action="" class="search">
-      <input type="text" name="what" placeholder="Métier, mots-clés ou agence" id="">
-      <input type="text" name="where" placeholder="Nom de la planète" id="">
-      <input type="submit" value="Rechercher">
-    </form>
-  </div>
 
-  <h2>Les dernières offres mises en ligne</h2>
+    <div class="search-section">
+      <h2>Tu recherches une offre en particulier ?</h2>
+      <form action="" class="search">
+        <input
+          type="text"
+          name="what"
+          placeholder="Métier, mots-clés ou agence"
+          id=""
+        />
+        <input type="text" name="where" placeholder="Nom de la planète" id="" />
+        <input type="submit" value="Rechercher" />
+      </form>
+    </div>
 
-  <section class="liste-offres">
-    <OfferJob />
-    <OfferJob />
-    <OfferJob />
-    <OfferJob />
-    <OfferJob />
-    <OfferJob />
-  </section>
-   
- 
+    <h2>Les dernières offres mises en ligne</h2>
+
+    <section class="liste-offres">
+      <OfferJob />
+      <OfferJob />
+      <OfferJob />
+      <OfferJob />
+      <OfferJob />
+      <OfferJob />
+    </section>
   </div>
 </template>
 
 <script>
-// https://randomuser.me/api
 import Banniere from "../components/Banniere.vue";
 export default {
   components: { Banniere, OfferJob },
   props: {
-    randomUser: Array | Object,
+    planets: Array,
   },
 };
 
@@ -51,7 +53,6 @@ import OfferJob from "../components/OfferJob.vue";
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 h2{
@@ -61,11 +62,10 @@ h2{
   text-align: center;
 }
 
-.liste-offres{
-  display: flex; 
+.liste-offres {
+  display: flex;
   flex-wrap: wrap;
-  gap:8px;
+  gap: 8px;
   justify-content: space-evenly;
 }
-
 </style>

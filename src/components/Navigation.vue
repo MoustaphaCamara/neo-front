@@ -1,6 +1,5 @@
 <template>
   <div class="nav-container">
-
     <div class="logo-user">
       <!-- ancien : https://i.ibb.co/JrhTCp2/logo-neosettlers.png -->
       <router-link to="/" class="link logo">
@@ -9,33 +8,27 @@
 
       <p>
         Salut
-        <span v-if="randomUser != null" class="user">
-          {{ randomUser.data.results[0].name.first }}
+        <span v-if="planets != null" class="user">
+          {{ planets[0].name }}
         </span>
       </p>
-
     </div>
 
     <div class="wrap">
-      <img src="../assets/menu_burger.png" alt="logo" class="wrap-img"/>
+      <img src="../assets/menu_burger.png" alt="logo" class="wrap-img" />
     </div>
 
     <div class="links">
-      
-
       <router-link to="/connexion" class="link connexion">
         <p>Connexion</p>
 
         <div class="connexion-niv2">
-          
           <router-link to="/connexion" class="link">
             <p>Agence</p>
           </router-link>
           <router-link to="/connexion" class="link">
             <p>Candidat</p>
           </router-link>
-
-
         </div>
       </router-link>
 
@@ -50,7 +43,6 @@
             <p>Candidat</p>
           </router-link>
         </div>
-
       </router-link>
       <!-- candidat et agency seront cachés une fois le développement des fonctionnalités fait, là c'est pour naviguer tranquillement.. :) -->
       <!-- candidat -->
@@ -82,7 +74,7 @@
 export default {
   name: "Navigation",
   props: {
-    randomUser: Array | Object,
+    planets: Array,
   },
 };
 </script>
@@ -156,74 +148,54 @@ export default {
 
 .connexion {
   position: relative;
- 
 }
 
 .connexion-niv2 {
-
   display: none;
-
 }
 
-.connexion:hover .connexion-niv2{
+.connexion:hover .connexion-niv2 {
   transition: 0.2s;
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  border: 1px solid  var(--sable);
+  border: 1px solid var(--sable);
   border-radius: 0 0 10px 10px;
-
 }
 
 /*  */
 
 .registration {
   position: relative;
- 
 }
 
 .registration-niv2 {
-
   display: none;
   transition: 0.2s;
-
 }
 
-.registration:hover .registration-niv2{
-
+.registration:hover .registration-niv2 {
   display: flex;
   width: 100%;
   flex-direction: column;
   position: absolute;
-  border: 1px solid  var(--sable);
+  border: 1px solid var(--sable);
   border-radius: 0 0 10px 10px;
-
 }
 
-
 @media screen and (max-width: 830px) {
-
   .links {
     display: none;
     flex-direction: column;
   }
 
   .wrap-img {
-  display: block;
+    display: block;
+  }
+
+  .wrap-img:hover {
+    background-color: red;
+  }
 }
-
-.wrap-img:hover {
-
-  background-color: red;
-
-}
-
-
-
-
-}
-
-
-
 </style>

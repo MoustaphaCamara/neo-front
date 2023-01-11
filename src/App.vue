@@ -31,7 +31,6 @@ export default {
   },
 };
 </script>
-
 <template>
   <div>
     <Navigation :planets="planets" />
@@ -39,5 +38,3 @@ export default {
     <Footer />
   </div>
 </template>
-
-<style scoped></style>

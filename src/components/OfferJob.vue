@@ -85,4 +85,13 @@ export default {
 p span {
   color: red;
 }
+
+@media screen and (max-width: 850px) {
+
+.offer {
+  width: 98%;
+}
+
+}
+
 </style>
